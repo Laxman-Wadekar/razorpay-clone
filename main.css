@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import "tailwindcss"; */
+.font-mullish {
+	font-family: Mulish, sans-serif;
+}
+
+.newFeatureCard {
+	box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+}
+.coreFeaturesBg {
+	background-size: 2000px 100%;
+	padding-top: 20rem;
+	padding-bottom: 20rem;
+}
+@media screen and (min-width: 1000px) {
+	.coreFeaturesBg {
+		background-size: 100% 100%;
+		padding-top: 12rem;
+		padding-bottom: 12rem;
+	}
+}
+.companiesList {
+	animation: 30s infinite linear companiesAnimation;
+}
+@keyframes companiesAnimation {
+	0% {
+		top: 0;
+	}
+	100% {
+		top: -160%;
+	}
+}
+.featureCard:hover .featureCardBox {
+	background-image: url(/images/features-wave.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 1rem right;
+}
+
+.featureCard:hover .featureCardIcon {
+	background-image: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+	box-shadow: 0px 2px 22px rgba(164, 163, 163, 0.25);
+}
+
+.featureCard:hover .featureCardSVG {
+	filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+	stroke-opacity: 0 !important;
+}
+
+.featureCard2:hover .featureCardBox {
+	background-image: url(/images/features2-wave.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 1rem right;
+}
+
+.featureCard2:hover .featureCardSVG {
+	filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+	stroke-opacity: 0 !important;
+}
+
+.featureCard2:hover .featureCardIcon {
+	background-image: linear-gradient(
+		188.57deg,
+		#2095ff -16.05%,
+		#6416ff 116.32%
+	);
+	box-shadow: 0px 2px 24px rgb(0 0 0 / 40%);
+	transition: all 200ms ease-in-out;
+}
+
+.newFeatureCard {
+	box-shadow: 2px 4px 9px 1px hsla(0, 0%, 0%, 0.05);
+}
+
+.coreFeaturesBg {
+	background-size: 2000px 100%;
+	padding-top: 20rem;
+	padding-bottom: 20rem;
+}
