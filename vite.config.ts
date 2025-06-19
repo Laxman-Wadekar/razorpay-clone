@@ -1,8 +1,21 @@
+// import { defineConfig } from 'vite'
+// import tailwindcss from '@tailwindcss/vite'
+// export default defineConfig({
+//   plugins: [
+//     tailwindcss(),
+//   ],
+//   base:"/razorpay-clone/"
+// })
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+// import react from '@vitejs/plugin-react'
+import tailwindcss from 'tailwindcss'
+
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-  base:"/razorpay-clone/"
+    base:"/razorpay-clone/",
+    css: {
+    postcss: {
+      plugins: [tailwindcss()],
+    },
+    
+  }
 })
